@@ -98,8 +98,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 String name = cursor.getString(cursor.getColumnIndex( KEY_NAME ));
                 String phn = cursor.getString(cursor.getColumnIndex(KEY_PHONE_NUMBER));
 
-                fileName.add("User id: " +id+" \n" );
-                fileName.add("UserName: "+name+ " \n");
+                fileName.add("User id: " +id );
+                fileName.add("UserName: "+name);
                 fileName.add("Phone Number: " phn + " \n");
                 cursor.moveToNext();
             }
