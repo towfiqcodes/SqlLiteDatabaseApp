@@ -98,9 +98,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 String name = cursor.getString(cursor.getColumnIndex( KEY_NAME ));
                 String phn = cursor.getString(cursor.getColumnIndex(KEY_PHONE_NUMBER));
 
-                fileName.add( id );
-                fileName.add(name);
-                fileName.add( phn );
+                fileName.add("User id: " +id+" \n" );
+                fileName.add("UserName: "+name+ " \n");
+                fileName.add("Phone Number: " phn + " \n");
                 cursor.moveToNext();
             }
             db.close();
